@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Robot Arm 2D - welyab.dev</title>
+    <link href="./bootstrap-5.3.2-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="mb-3">
+                <h1>Robot Arm 2D Model</h1>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <form>
+                        <div class="mb-3">
+                            <label for="segments-select" class="form-label">
+                                Moving joint
+                            </label>
+                            <select id="segments-select" class="form-select" aria-label="Default select example">
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <div class="form-check">
+                                <input id="arm-skin-checkbox" class="form-check-input" type="checkbox" checked>
+                                <label for="arm-skin-checkbox" class="form-check-label">
+                                    Use skin
+                                </label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <canvas id="robot-arm-canvas" width="800" height="600" style="border:1px solid #6b6b6b;">
+                    </canvas>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./jquery-v3.7.1/jquery-3.7.1.min.js"></script>
+    <script src="./fabricjs-5.3.0/fabric.min.js"></script>
+
+    <script src="./js/util.js"></script>
+    <script src="./js/math-operations.js"></script>
+    <script src="./js/robot-arm.js"></script>
+    <script src="./js/robot-environment.js"></script>
+    <script src="./js/page-controls.js"></script>
+</body>
+
+</html>
